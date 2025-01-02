@@ -15,7 +15,7 @@ use bit_ops::{BitReader, BitWriter};
 fn prefix_codes_r(tree: &Box<Node>, codes: &mut HashMap<u8, Vec<u8>>, code: Vec<u8>) {
     match tree.c {
         Some(ch) => {
-            // println!("{}: {} ({})", ch, code.iter().fold(String::new(), |s, e| s + &e.to_string()), tree.f);
+            // println!("{}: {} ({})", ch as char, code.iter().fold(String::new(), |s, e| s + &e.to_string()), tree.f);
             codes.insert(ch, code);
         },
         None => {
