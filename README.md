@@ -20,11 +20,4 @@ bash
 # Decompress huffman -x input.txt.hf
 ```
 
-# Compress
-huffman -c input.txt
-
-# Decompress
-huffman -x input.txt.hf
-
-
 This will generate `input.txt.hf` when compressing and restore `input.txt` when decompressing.
