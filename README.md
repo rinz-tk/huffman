@@ -15,9 +15,11 @@ huffman [-c | -x] filename
 ```
 bash
 
-# Compress huffman -c input.txt
+# Compress
+huffman -c input.txt
 
-# Decompress huffman -x input.txt.hf
+# Decompress
+huffman -x input.txt.hf
 ```
 
 This will generate `input.txt.hf` when compressing and restore `input.txt` when decompressing.
